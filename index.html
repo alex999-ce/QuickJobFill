@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuickJobFill · 求职一键填 — 在线演示</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4D3B'/%3E%3Cpath d='M18 22h28v6H18zm0 12h28v6H18zm0 12h18v6H18z' fill='%23EFC268'/%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--paper:#F6F3EC;--card:#fff;--ink:#26261F;--ink2:#6E6C60;--ink3:#9B9889;--green:#1F4D3B;--green-deep:#123A29;--green-bg:#E9F1EC;--gold:#C08A26;--gold-deep:#9A6E1C;--gold-soft:#F6EBD3;--line:#E6E1D3}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;padding:40px 16px 64px}
+.wrap{max-width:820px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--gold-soft);color:var(--gold-deep);font-size:12px;font-weight:600;border:1px solid #E8D6AE;border-radius:99px;padding:3px 12px;margin-bottom:18px}
+h1{font-size:30px;letter-spacing:.01em;margin-bottom:6px}
+h1::before{content:"";display:inline-block;width:6px;height:.9em;border-radius:3px;background:var(--gold);margin-right:12px;vertical-align:-2px}
+.sub{font-size:15px;color:var(--ink2);max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 34px}
+.btn{display:inline-flex;align-items:center;gap:9px;border:none;border-radius:10px;cursor:pointer;font-size:15px;font-weight:600;font-family:inherit;padding:13px 22px;text-decoration:none}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-deep)}
+.btn-ghost{background:transparent;color:var(--green);border:1px solid #C6D6CC}
+.btn-ghost:hover{background:var(--green-bg)}
+.preview{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:34px;box-shadow:0 8px 24px rgba(38,38,31,.08)}
+.preview img{display:block;width:100%}
+.preview .cap{font-size:12.5px;color:var(--ink2);background:#FCFBF7;padding:9px 14px;border-top:1px solid var(--line)}
+h2{font-size:17px;margin:26px 0 10px}
+h2::before{content:"";display:inline-block;width:4px;height:.9em;border-radius:3px;background:var(--gold);margin-right:9px;vertical-align:-2px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+.card b{display:block;font-size:14px;margin-bottom:5px;color:var(--green)}
+.card span{font-size:12.5px;color:var(--ink2)}
+.note{background:var(--gold-soft);border:1px solid #E8D6AE;border-radius:10px;padding:13px 16px;font-size:13px;color:var(--ink2);margin-top:30px}
+.note b{color:var(--gold-deep)}
+.foot{margin-top:34px;font-size:12px;color:var(--ink3)}
+.foot a{color:var(--green);text-decoration:none}
+@media (max-width:640px){h1{font-size:24px}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">在线演示 · 界面原型 · 第一阶段</div>
+  <h1>QuickJobFill 求职一键填</h1>
+  <p class="sub">填一次个人资料，自动帮你填好各招聘网站的投递表单，本人确认后提交——数据不出本机。</p>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="%E6%B1%82%E8%81%8C%E4%B8%80%E9%94%AE%E5%A1%AB-%E9%A1%B5%E9%9D%A2%E5%8E%9F%E5%9E%8B.html">
+      打开界面原型体验
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn btn-ghost" href="https://github.com/alex999-ce/QuickJobFill" target="_blank" rel="noopener">查看 GitHub 仓库</a>
+  </div>
+
+  <div class="preview">
+    <img src="assets/preview-popup.jpg" alt="求职一键填浏览器场景预览">
+    <div class="cap">点浏览器右上角插件图标，面板弹出帮你填表（界面原型演示，示例数据为虚构）</div>
+  </div>
+
+  <h2>核心功能</h2>
+  <div class="cards">
+    <div class="card"><b>个人资料档案</b><span>按分类整理求职信息，填一次，处处用</span></div>
+    <div class="card"><b>一键自动填表</b><span>能确定的填好标绿，拿不准的标橙待你确认</span></div>
+    <div class="card"><b>确认后提交</b><span>插件只填表、绝不代提交，数据不出本机</span></div>
+  </div>
+
+  <div class="note">
+    <b>当前状态：</b>界面原型已验收（22 项测试通过）。真实保存、Chrome 扩展安装、真实表单扫描、AI 字段识别将在第二阶段接入，详见 <a href="README.md">README</a> 的已知限制与路线图。
+  </div>
+
+  <p class="foot">MIT License · 由 <a href="https://github.com/alex999-ce">alex999-ce</a> 开源 · 设计参考 <a href="https://github.com/Br1an67/OpenJobAutofill" rel="noopener">OpenJobAutofill</a>（MIT）</p>
+</div>
+</body>
+</html>
